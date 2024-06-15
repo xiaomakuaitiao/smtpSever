@@ -267,7 +267,6 @@ func main() {
 	sTLS.AllowInsecureAuth = true
 	sTLS.TLSConfig = &tls.Config{
 		Certificates: []tls.Certificate{cert},
-		MinVersion:   tls.VersionTLS12,
 	}
 
 	// 调整代码：使用 loggerWrapper 启用详细的日志记录
