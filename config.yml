@@ -1,0 +1,18 @@
+database:
+  host: "mysql.mysql-compose.orb.local"
+  username: "root"
+  password: "admin321"
+  port: 3306
+  name: "email"
+
+settings:
+  SingleRecipientOnly: true #控制是否只发送一封邮件
+  maxMessageBytes: 1048576 #控制邮件大小 1MB
+  maxRecipients: 50 #控制邮件接收人数
+  readTimeout: 10 #控制读取超时时间
+  writeTimeout: 10 #控制写入超时时间
+  certPath: "crt/bundle.crt" #控制证书路径
+  keyPath: "crt/privatekey.key" #控制私钥路径
+  domain: "xzxz001.xyz" #控制域名
+  addr: ":587" #控制端口
+  tlsAddr: ":465" #控制TLS端口
